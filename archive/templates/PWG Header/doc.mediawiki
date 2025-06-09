@@ -1,0 +1,25 @@
+{{Documentation subpage}}
+
+== Documentation ==
+This template inserts a header to be used on all PWG Schema and PWG Guide pages explaining the purpose and editing expectations for each type of page.
+
+== Usage ==
+Insert <code><nowiki>{{PWG Header|type=}}</nowiki></code> with the appropriate ''type'' value at the top of all pages related to the PWG Schema and PWG Guide.
+
+== Parameters ==
+;type
+: Specifies the type of page. Determines which message box is displayed. Possible values:
+::* <code>main-page</code> – Main Page: Latest release. Do not edit (except by PWG participants for new releases).
+::* <code>main-talk</code> – Main Talk: Talk page for Main Page. Do not edit (direct comments to Draft Talk).
+::* <code>draft-page</code> – Draft Page: Work-in-progress page for proposed changes. Edits welcome after discussion.
+::* <code>draft-talk</code> – Draft Talk: Discussion page for proposed changes. Edits welcome, especially from non-participants.
+::* <code>release-page</code> – Release Page: Snapshot page for each release. Do not edit.
+::* <code>release-talk</code> – Release Talk: Talk page for a Release page. Do not edit (direct comments to Draft Talk).
+: If not specified or invalid, a caution message is shown requesting the type parameter.
+
+== Example ==
+<pre>
+{{PWG Releases Table}}
+</pre>
+
+{{PWG Releases Table}}

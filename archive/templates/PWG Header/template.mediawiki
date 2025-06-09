@@ -1,0 +1,12 @@
+<noinclude>{{Documentation}}</noinclude>
+<includeonly>
+{{#switch: {{{type|}}}
+| main-page = {{Ambox|type=notice|text='''Main Page''': Latest release. Do not edit. (Except by PWG participants, for new releases.)}}
+| main-talk = {{Ambox|type=caution|text='''Main Talk''': Talk page for Main Page. Do not edit. (Direct comments to Draft Talk)}}
+| draft-page = {{Ambox|type=notice|text='''Draft Page''': Continually open work-in-progress page for proposed changes for the next release. Edits are welcome, after discussion on the Draft Talk page and/or during PWG meetings.}}
+| draft-talk = {{Ambox|type=notice|text='''Draft Talk''': Continually open work-in-progress page for discussion of proposed changes for the next release. Edits are welcome, especially by users who are not otherwise PWG participators!}}
+| release-page = {{Ambox|type=caution|text='''Release Page''': "Snapshot" page created for each release. Do not edit.}}
+| release-talk = {{Ambox|type=caution|text='''Release Talk''': Talk page for an individual "snapshot" Release page. Do not edit. (Direct comments to Draft Talk)}}
+| #default = {{Ambox|type=caution|text='''PWG Page''': Please specify the type parameter.}}
+}}
+</includeonly>
