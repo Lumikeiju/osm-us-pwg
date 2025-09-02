@@ -43,6 +43,13 @@ style:
     - type: line
       filter:
         - any
+        - [ ==, [ get, 'footway' ], traffic_island ]
+      paint:
+        line-width: 2
+        line-color: "#ADC58B"
+    - type: line
+      filter:
+        - any
         - [ ==, [ get, 'footway' ], crossing ]
       paint:
         line-width: 2
