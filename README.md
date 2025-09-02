@@ -4,7 +4,7 @@
 
 ## Presets
 
-- **PWG Schema Preset** | _([pwg_schema.xml](https://github.com/Lumikeiju/OSM-US-PWG/blob/main/presets/pwg_schema.xml))_ | Alpha version of a JOSM tagging preset following tagging guidelines developed by the PWG
+- **[PWG Schema Preset](presets\pwg_schema.xml)** | _(pwg_schema.xml)_ | Alpha version of a JOSM tagging preset following tagging guidelines developed by the PWG
 
 ## Visualizations
 
@@ -14,11 +14,11 @@ Style documents for use on [Ultra](https://overpass-ultra.us/).
 
 Refer to the [MapLibre Style Spec documentation](https://maplibre.org/maplibre-style-spec/) for more details on customizing the visualization.
 
-- **[Curb Type](visualizations\curb_type.yaml)** | _(curb_type)_ | Visualization of `kerb=raised|lowered|flush|no` values on nodes
+- **[Curb Type](visualizations\curb_type.yaml)** | _(curb_type.yaml)_ | Visualization of `kerb=raised|lowered|flush|no` values on nodes
 
-- **[Sidewalk Tags on Roadways](visualizations\roadway_sidewalk_tagging.yaml)** | _(roadway_sidewalk_tagging)_ | Visualization of `sidewalk*=*` tags on roadways
+- **[Sidewalk Tags on Roadways](visualizations\roadway_sidewalk_tagging.yaml)** | _(roadway_sidewalk_tagging.yaml)_ | Visualization of `sidewalk*=*` tags on roadways
 
-- **[Tactile Paving](visualizations\tactile_paving.yaml)** | _(tactile_paving)_ | Visualization of `tactile_paving=yes|no` values on nodes
+- **[Tactile Paving](visualizations\tactile_paving.yaml)** | _(tactile_paving.yaml)_ | Visualization of `tactile_paving=yes|no` values on nodes
 
 ## Archive
 
