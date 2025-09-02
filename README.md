@@ -10,7 +10,7 @@
 
 Style documents for use on [Ultra](https://overpass-ultra.us/).
 
-**How to use:** Replace the query on Overpass Ultra with the contents of the file. Navigate on the map to the desired area and hit "Run" at the top left.
+**How to use:** Replace the query on Ultra with the contents of the file. Navigate on the map to the desired area and hit "Run" at the top left.
 
 Refer to the [MapLibre Style Spec documentation](https://maplibre.org/maplibre-style-spec/) for more details on customizing the visualization.
 
