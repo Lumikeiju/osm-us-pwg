@@ -26,4 +26,22 @@ Archive with copies of PWG-related documents.
 
 ### Guide
 
+- Shortcut: https://wiki.osm.org/PWG_Guide
+- Full link: https://wiki.openstreetmap.org/wiki/Foundation/Local_Chapters/United_States/Pedestrian_Working_Group/Guide
+
 ### Schema
+
+- Shortcut: https://wiki.osm.org/PWG_Schema
+- Full link: https://wiki.openstreetmap.org/wiki/Foundation/Local_Chapters/United_States/Pedestrian_Working_Group/Schema
+
+### Templates
+
+#### PWG Header
+
+- https://wiki.openstreetmap.org/wiki/Template:PWG_Header
+- https://wiki.openstreetmap.org/wiki/Template:PWG_Header/doc
+
+#### PWG Template
+
+- https://wiki.openstreetmap.org/wiki/Template:PWG_Releases_Table
+- https://wiki.openstreetmap.org/wiki/Template:PWG_Releases_Table/doc
