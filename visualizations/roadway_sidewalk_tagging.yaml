@@ -55,7 +55,6 @@ style:
         line-width: 2
         line-color: "#FBB13C"
 ---
-
 [bbox:{{bbox}}];
 (
   way[~"sidewalk"~"separate|yes|no"];
