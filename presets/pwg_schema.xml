@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
-	<group name="PWG Schema ALPHA v0.2">
-		<!-- Node/Way: Crossing -->
-		<item name="01. Crossing (Node/Way)" type="node,way">
-			<label text="Crossing (Node/Way)" />
-			<combo key="highway" text="Highway" values="footway,crossing" default="" />
-			<combo key="footway" text="Footway" values="crossing" default="" />
-			<combo key="crossing:markings" text="Crossing Markings" values="yes,no,zebra,zebra:paired,Specify..." default="no" />
-			<combo key="crossing:markings:colour" text="Crossing Markings Color" values="yellow,white,Specify..." default="" />
-			<combo key="crossing:signals" text="Crossing Signals" values="yes,no,shared,dedicated" default="no" />
-			<combo key="crossing:island" text="Crossing Island" values="yes,no" default="no" />
-			<combo key="crossing:continuous" text="Continuous" values="yes,no" default="no" />
-			<combo key="surface" text="Surface" values="asphalt,concrete,paving_stones,paved,Specify..." default="asphalt" />
-			<combo key="lit" text="Lit" values="yes,no,24/7,disused" default="yes" />
-			<combo key="tactile_paving" text="Tactile Paving" values="yes,no" default="no" />
-			<combo key="tactile_paving:colour" text="Tactile Paving Color" values="yellow,white,Specify..." default="" />
-			<combo key="crossing" text="Crossing" values="uncontrolled,unmarked,traffic_signals,no" default="" />
-			<combo key="crossing_ref" text="Crossing Ref" values="" default="" />
-		</item>
-		<!-- Node/Way: Curb -->
-		<item name="02. Curb (Node/Way)" type="node,way,closedway">
-			<label text="Curb (Node/Way)" />
-			<check key="barrier" text="Barrier" default="on" value_on="kerb" disable_off="true" />
-			<combo key="kerb" text="Curb" values="raised,lowered,no,flush" default="raised" editable="false" />
-			<check key="tactile_paving" text="Tactile Paving" default="off" />
-			<combo key="tactile_paving:colour" text="Tactile Paving Color" values="yellow,white,Specify..." default="" />
-			<combo key="surface" text="Surface" values="concrete,asphalt,Specify..." default="" />
-		</item>
-		<!-- Way: Sidewalk -->
-		<item name="03. Sidewalk (Way)" type="way">
-			<label text="Sidewalk (Way)" />
-			<key key="highway" value="footway" />
-			<key key="footway" value="sidewalk" />
-			<combo key="surface" text="Surface" values="concrete,asphalt,paving_stones,brick,paved,Specify..." default="concrete" />
-			<combo key="lit" text="Lit" values="yes,no,24/7,disused" default="" />
-		</item>
-		<!-- Area: Sidewalk -->
-		<item name="04. Sidewalk (Area)" type="closedway">
-			<label text="Sidewalk (Area)" />
-			<key key="area:highway" value="footway" />
-			<key key="landuse" value="highway" />
-		</item>
-		<!-- Way: Roadway -->
-		<item name="05. Roadway (Way)" type="way">
-			<label text="Roadway (Way) Sidewalk Tagging" />
-			<combo key="sidewalk:both" text="Sidewalk (Both)" values="separate,yes,no" />
-			<combo key="sidewalk:left" text="Sidewalk (Left)" values="separate,yes,no" />
-			<combo key="sidewalk:right" text="Sidewalk (Right)" values="separate,yes,no" />
-			<text key="sidewalk" text="Sidewalk" default="" />
-		</item>
-	</group>
+  <group name="PWG Schema ALPHA v0.2">
+    <!-- Node/Way: Crossing -->
+    <item name="01. Crossing (Node/Way)" type="node,way">
+      <label text="Crossing (Node/Way)" />
+      <combo key="highway" text="Highway" values="footway,crossing" default="" />
+      <combo key="footway" text="Footway" values="crossing" default="" />
+      <combo key="crossing:markings" text="Crossing Markings" values="yes,no,zebra,zebra:paired,Specify..." default="no" />
+      <combo key="crossing:markings:colour" text="Crossing Markings Color" values="yellow,white,Specify..." default="" />
+      <combo key="crossing:signals" text="Crossing Signals" values="yes,no,shared,dedicated" default="no" />
+      <combo key="crossing:island" text="Crossing Island" values="yes,no" default="no" />
+      <combo key="crossing:continuous" text="Continuous" values="yes,no" default="no" />
+      <combo key="surface" text="Surface" values="asphalt,concrete,paving_stones,paved,Specify..." default="asphalt" />
+      <combo key="lit" text="Lit" values="yes,no,24/7,disused" default="yes" />
+      <combo key="tactile_paving" text="Tactile Paving" values="yes,no" default="no" />
+      <combo key="tactile_paving:colour" text="Tactile Paving Color" values="yellow,white,Specify..." default="" />
+      <combo key="crossing" text="Crossing" values="uncontrolled,unmarked,traffic_signals,no" default="" />
+      <combo key="crossing_ref" text="Crossing Ref" values="" default="" />
+    </item>
+    <!-- Node/Way: Curb -->
+    <item name="02. Curb (Node/Way)" type="node,way,closedway">
+      <label text="Curb (Node/Way)" />
+      <check key="barrier" text="Barrier" default="on" value_on="kerb" disable_off="true" />
+      <combo key="kerb" text="Curb" values="raised,lowered,no,flush" default="raised" editable="false" />
+      <check key="tactile_paving" text="Tactile Paving" default="off" />
+      <combo key="tactile_paving:colour" text="Tactile Paving Color" values="yellow,white,Specify..." default="" />
+      <combo key="surface" text="Surface" values="concrete,asphalt,Specify..." default="" />
+    </item>
+    <!-- Way: Sidewalk -->
+    <item name="03. Sidewalk (Way)" type="way">
+      <label text="Sidewalk (Way)" />
+      <key key="highway" value="footway" />
+      <key key="footway" value="sidewalk" />
+      <combo key="surface" text="Surface" values="concrete,asphalt,paving_stones,brick,paved,Specify..." default="concrete" />
+      <combo key="lit" text="Lit" values="yes,no,24/7,disused" default="" />
+    </item>
+    <!-- Area: Sidewalk -->
+    <item name="04. Sidewalk (Area)" type="closedway">
+      <label text="Sidewalk (Area)" />
+      <key key="area:highway" value="footway" />
+      <key key="landuse" value="highway" />
+    </item>
+    <!-- Way: Roadway -->
+    <item name="05. Roadway (Way)" type="way">
+      <label text="Roadway (Way) Sidewalk Tagging" />
+      <combo key="sidewalk:both" text="Sidewalk (Both)" values="separate,yes,no" />
+      <combo key="sidewalk:left" text="Sidewalk (Left)" values="separate,yes,no" />
+      <combo key="sidewalk:right" text="Sidewalk (Right)" values="separate,yes,no" />
+      <text key="sidewalk" text="Sidewalk" default="" />
+    </item>
+  </group>
 </presets>
