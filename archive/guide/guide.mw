@@ -1,11 +1,10 @@
-{{Ambox
-| type = caution
-| text = This schema document is still under active construction - consider other Wiki pages to be more authoritative in cases of conflicting information!
-}}
+{{PWG Header|type=main-page}}
 
-This is a work-in-progress draft of a quick-start guide for pedestrian infrastructure mapping developed by the [[Foundation/Local_Chapters/United_States/Pedestrian_Working_Group|Pedestrian Working Group]].
+This is a quick-start guide for pedestrian infrastructure mapping developed by the [[Foundation/Local_Chapters/United_States/Pedestrian_Working_Group|Pedestrian Working Group]].
 
-A work-in-progress draft of a full tagging schema for pedestrian infrastructure mapping is available [[Draft:Foundation/Local Chapters/United States/Pedestrian Working Group/Schema|here]].
+A full tagging schema for pedestrian infrastructure mapping is available [[Foundation/Local Chapters/United States/Pedestrian Working Group/Schema|here]].
+
+Questions? Email [mailto:pedestrian@openstreetmap.us pedestrian@openstreetmap.us]!
 
 ----
 
@@ -38,8 +37,11 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 : [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|sidewalk}} - Representational mapping of sidewalk centerline.
 
 === Crossings ===
-* {{IconWay}} Crossing Way Mapping
+* {{IconNode}} Crossing Node Mapping:
+: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|crossing}} + {{Tag|footway|crossing}} - Node attached to the intersecting road, indicating the location of a crossing.
+* {{IconWay}} Crossing Way Mapping:
 : [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|crossing}} - Representational mapping of crossing centerline.
+:: ⚠️ '''''NOTE''': The {{Tag|tactile_paving}} tag is common on {{Tag|footway|crossing}} {{IconWay}} ways, but often incorrect because the tag, when applied to ways, is meant to indicate linear wayfinding tactile paving that is present '''along the entire way'''. This is exceedingly rare in the United States, so please review [[Key:tactile paving#Use on ways|this section]] of the {{Tag|tactile_paving}} page for additional information and fix the {{Tag|tactile_paving}} tag if it is present and incorrect!''
 
 === Connectors (exact tagging schema pending) ===
 * {{IconWay}} Connector Way Mapping:
@@ -53,7 +55,7 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 
 Included below are the [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] Bronze Tier and [[File:PWG - Silver.svg|16px|text-bottom|frameless]] Silver Tier tags, which represent a good level of detail to aim for while balancing the amount of work required to map pedestrian infrastructure in detail.
 
-For a full listing of tags and their tier classifications, refer to the full schema [[Draft:Foundation/Local Chapters/United States/Pedestrian Working Group/Schema|here]].
+For a full listing of tags and their tier classifications, refer to the full schema [[Foundation/Local Chapters/United States/Pedestrian Working Group/Schema|here]].
 
 === Sidewalks ===
 
@@ -66,6 +68,16 @@ For a full listing of tags and their tier classifications, refer to the full sch
 
 === Crossings ===
 
+* {{IconWay}} Crossing Way Tagging Only:
+: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|crossing}} - Indicate crossing location
+
+* {{IconNode}} Crossing Node Tagging Only:
+: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|crossing}} - Indicate crossing location
+:: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving}} - Specify tactile paving presence '''at curb nodes'''
+::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|yes}} - Tactile paving is present '''at both curbs'''
+::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|partial}} - Tactile paving is present '''at only one curb'''
+::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|no}} - Tactile paving is not present '''at either curb'''
+
 * {{IconNode}}{{IconWay}} Crossing Node and Way Tagging:
 : [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|crossing:markings}} - Specify presence and type of markings
 :: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|crossing:markings|no}} - No markings
@@ -76,9 +88,7 @@ For a full listing of tags and their tier classifications, refer to the full sch
 
 : [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|crossing:signals}} - Specify presence and type of signalization
 :: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|crossing:signals|no}} - No signals
-:: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|crossing:signals|yes}} - Signals present, type unspecified
-:: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|crossing:signals||shared}} - Vehicle traffic lights only
-:: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|crossing:signals||dedicated}} - Dedicated pedestrian traffic signals
+:: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|crossing:signals|yes}} - Signals present
 
 : [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|crossing:island}} - Presence of pedestrian island
 
@@ -86,19 +96,6 @@ For a full listing of tags and their tier classifications, refer to the full sch
 :: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|surface|concrete}} - Concrete surface material
 :: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|surface|asphalt}} - Asphalt surface material
 :: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|surface}} - Any other applicable value
-
-* {{IconNode}} Crossing Way Tagging Only:
-: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|crossing}} - Indicate crossing location
-:: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving}} - Specify tactile paving presence '''along crossing way'''
-::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|yes}} - Tactile paving is present '''along the entire way'''
-::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|no}} - Tactile paving is not present '''along the entire way'''
-
-* {{IconWay}} Crossing Node Tagging Only:
-: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|crossing}} - Indicate crossing location
-:: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving}} - Specify tactile paving presence '''at curb nodes'''
-::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|yes}} - Tactile paving is present '''at both curbs'''
-::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|partial}} - Tactile paving is present '''at only one curb'''
-::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|tactile_paving|no}} - Tactile paving is not present '''at either curb'''
 
 === Curbs ===
 
@@ -126,10 +123,10 @@ For a full listing of tags and their tier classifications, refer to the full sch
 ===Access Aisles===
 
 * {{IconWay}} Access Aisle Way Tagging:
-: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|access_aisle}} - Indicate access aisle location
-:: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings}} - Specify presence and type of markings
-::: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings|no}} - No markings
-::: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings|yes}} - Markings present, type unspecified
+: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|access_aisle}} - Indicate access aisle location
+:: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings}} - Specify presence and type of markings
+::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings|no}} - No markings
+::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings|yes}} - Markings present, type unspecified
 ::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings||zebra}} - Zebra markings
 ::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings||ladder:skewed}} - Skewed ladder markings
 ::: [[File:PWG - Silver.svg|16px|text-bottom|frameless]] {{Tag|access_aisle:markings}} - Any other applicable value
@@ -145,3 +142,17 @@ For a full listing of tags and their tier classifications, refer to the full sch
 :: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|sidewalk:{{Tagvariable|side}}}} ({{Tag|sidewalk:left}} | {{Tag|sidewalk:right}} | {{Tag|sidewalk:both}})
 ::: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|sidewalk:{{Tagvariable|side}}||no}} - No associated sidewalk present
 ::: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|sidewalk:{{Tagvariable|side}}||separate}} - Associated sidewalk is present '''and''' mapped as separate geometry
+
+== In-editor Examples ==
+[[File:Complex centerlines.png|none|thumb|683x683px|In many cases, centerlines break down as a model for complex intersections of footways. At intersections of three or more footways, it is often necessary to position the intersection point at the centroid of each incoming way. At the top left of this image, the intersection of seven converging footways is smoothed by creating multiple intersection points. When mapping intersections like this, it's important to consider directions of travel: if a pedestrian were to enter this intersection via way A and exit via way B, could their route be reasonably drawn along these centerlines?]]
+[[File:Access aisles with unmarked crossing.png|none|thumb|585x585px|In this example, two access aisles enter a parking lot across from each other. While a {{Tag|footway|access_aisle}} way ends where painted markings end, it is valuable here to connect the access aisles with an unmarked crossing to denote this navigable route.]]
+[[File:Two directions at crossing.png|none|thumb|485x485px|At this corner, two perpendicular sidewalk centerlines cross but individually continue to meet the curb at two locations. Notably, one direction of travel has a curb ramp with tactile paving while the other one does not.]]
+[[File:Perpendicular sidewalk intersection with separate surface.png|none|thumb|In this example, it makes sense to have the sidewalk centerlines at an intersection extend out to respective curb ramps. However, their ways are still split similar to "stubs" in other examples. This is so that we can tag {{Tag|surface|concrete}} rather than {{Tag|surface|paving_stones}} where appropriate.|412x412px]]
+[[File:Sidewalk stub in iD.png|none|thumb|489x489px|A typical intersection corner with sidewalk centerlines mapped. Two perpendicular sidewalks converge at a single curb ramp, with a sidewalk stub connecting out to a lowered curb node and crossing ways.]]
+[[File:Sidewalk stub with two curb ramps.png|none|thumb|Here, two curb ramps are installed at a single corner to serve crossings in different directions. Multiple stub ways are used to connect them to sidewalk centerlines to the north.|409x409px]]
+[[File:Rounded corner with two curb ramps.png|none|thumb|An example of a rounded corner with two curb ramps. The ramps are separated by a curb (not mapped). Separate sidewalk stubs connect each ramp to the sidewalk centerline.|411x411px]]
+[[File:Crossing intersects with driveway.png|none|thumb|930x930px|Sometimes pedestrian infrastructure elements interact with driveways. Here, a marked crossing ends at a driveway (highlighted way) on its east side. The driveway apron in this example qualifies as a lowered curb.]]
+
+{{PWG Releases Table}}
+
+[[Category:Tagging guidelines]]

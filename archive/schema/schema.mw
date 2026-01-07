@@ -1,11 +1,12 @@
-{{Ambox
-| type = caution
-| text = This schema document is still under active construction - consider other Wiki pages to be more authoritative in cases of conflicting information!
-}}
+{{PWG Header|type=main-page}}
 
-This is a work-in-progress draft of a full tagging schema for pedestrian infrastructure mapping developed by the [[Foundation/Local_Chapters/United_States/Pedestrian_Working_Group|Pedestrian Working Group]]. Questions? Email [mailto:pedestrian@openstreetmap.us pedestrian@openstreetmap.us]!
+This is a tagging schema for pedestrian infrastructure mapping developed by the [[Foundation/Local_Chapters/United_States/Pedestrian_Working_Group|Pedestrian Working Group]].
 
-A work-in-progress draft of a quick-start guide for pedestrian infrastructure mapping is available [[Draft:Foundation/Local Chapters/United States/Pedestrian Working Group/Guide|here]].
+A quick-start guide for pedestrian infrastructure mapping is available [[Foundation/Local Chapters/United States/Pedestrian Working Group/Guide|here]].
+
+Questions? Email [mailto:pedestrian@openstreetmap.us pedestrian@openstreetmap.us]!
+
+----
 
 == Tiers ==
 
@@ -26,7 +27,7 @@ If, for example, you want to map pedestrian infrastructure so that it can be use
 If you have access to high-quality imagery and want to map pedestrian infrastructure so that it can be used by accessibility-focused routers, you would include all features and tags marked with a [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] Bronze Tier symbol or a [[File:PWG - Silver.svg|16px|text-bottom|frameless]] Silver Tier symbol.
 
 === Bronze ===
-[[File:PWG - Bronze.svg|64px|frameless|none|alt=Circular icon containing a pedestrian symbol with a bronze-colored background.]]
+[[File:PWG - Bronze.svg|64px|frameless|alt=Circular icon containing a pedestrian symbol with a bronze-colored background.]]
 
 '''Description:''' Basic geometry and essential tags are present to form an independent navigable pedestrian network consisting of sidewalks and crossings.
 
@@ -39,7 +40,7 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 ** Any existing properties of the sidewalks which were previously mapped on the roadway, such as {{Tag|sidewalk:left:surface||concrete}}, should be moved from the roadway to the sidewalks.
 
 === Silver ===
-[[File:PWG - Silver.svg|64px|frameless|none|alt=Circular icon containing a pedestrian symbol with a silver-colored background.]]
+[[File:PWG - Silver.svg|64px|frameless|alt=Circular icon containing a pedestrian symbol with a silver-colored background.]]
 
 '''Description:''' Detailed geometry and tagging is present to enable accessibility-focused applications and basic visualizations.
 
@@ -49,7 +50,7 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 * Detailed information about features is tagged, such as curb types and surface materials.
 
 === Gold ===
-[[File:PWG - Gold.svg|64px|frameless|none|alt=Circular icon containing a pedestrian symbol with a gold-colored background.]]
+[[File:PWG - Gold.svg|64px|frameless|alt=Circular icon containing a pedestrian symbol with a gold-colored background.]]
 
 '''Description:''' Micromapping and highly detailed tagging is present, which enables router customization for various types of mobility-impaired users and for detailed representation of the environment for institutional use.
 
@@ -61,7 +62,7 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 * Small features, such as call buttons and pedestrian signal lights may be mapped separately.
 
 === Diamond ===
-[[File:PWG - Diamond.svg|64px|frameless|none|alt=Circular icon containing a pedestrian symbol with a diamond-colored background.]]
+[[File:PWG - Diamond.svg|64px|frameless|alt=Circular icon containing a pedestrian symbol with a diamond-colored background.]]
 
 '''Description:''' Tags and mapping methods that are on the line or just outside of the PWG Schema's scope but still recognized. These tags may require specialized tools or expertise to survey or calculate, or are only regionally specific, extremely uncommon, or still in a proposed state and without widespread usage.
 
@@ -72,58 +73,58 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 === Sidewalks ===
 {| class="wikitable sortable" style="width: 100%; margin: auto;"
 ! style="width: 20%;" |Tag
-!Element 
+! Element 
 ! style="width: 20%;" |[[File:PWG_-_Bronze.svg|alt=Circular icon containing a pedestrian symbol with a bronze-colored background.|frameless|32x32px]] Bronze
 ! style="width: 20%;" |[[File:PWG_-_Silver.svg|alt=Circular icon containing a pedestrian symbol with a silver-colored background.|frameless|32x32px]] Silver
 ! style="width: 20%;" |[[File:PWG - Gold.svg|alt=Circular icon containing a pedestrian symbol with a gold-colored background.|frameless|32x32px]] Gold
 ! style="width: 20%;" |[[File:PWG - Diamond.svg|alt=Circular icon containing a pedestrian symbol with a diamond-colored background.|frameless|32x32px]] Diamond
 |-
-|{{Tag|highway|footway}} + {{Tag|footway|sidewalk}}
-|{{IconWay}}|| colspan="4" | Indicates a sidewalk location.
+| {{Tag|highway|footway}} + {{Tag|footway|sidewalk}}
+| {{IconWay}} || colspan="4" | Indicates a sidewalk location.
 |-
-|{{Tag|surface}}
-|{{IconWay}}||
-| colspan="3" |Required in the silver tier, example values include:
-*{{Value|concrete}}
-*{{Value|asphalt}}
+| {{Tag|surface}}
+| {{IconWay}} ||
+| colspan="3" | Required in the Silver tier. Example values include:
+* {{Value|concrete}}
+* {{Value|asphalt}}
 |-
-|{{Tag|tactile_paving}}
-|{{IconWay}}
-|
-| colspan="3" |Is ''tactile paving'' present?:
-*{{Value|yes}} - Tactile paving is present '''along the entire way'''
-*{{Value|no}} - Tactile paving is not present '''along the entire way'''
-|-
-|{{Tag|lit}}
-|{{IconWay}}
+| {{Tag|lit}}
+| {{IconWay}}
 | colspan="2" |
-| colspan="2" |Indicate whether the way is lit, examples include:
-
+| colspan="2" | Indicate whether the way is lit, examples include:
 * {{Value|yes}}, or
 * {{Value|no}}, or
 * any other valid value
 |-
-|{{Tag|width}}
-|{{IconWay}}
+| {{Tag|width}}
+| {{IconWay}}
 | colspan="2" |
-| colspan="2" |Specify the width of the sidewalk
+| colspan="2" | Specify the width of the sidewalk
 |-
-|{{Tag|incline}}
-|{{IconWay}}
+| {{Tag|incline}}
+| {{IconWay}}
 | colspan="2" |
-|Incline '''along the way''' (for hilly areas), specified as: {{Value|up}} or {{Value|down}}
-|Incline '''along the way''' (for hilly areas), specified as a value, example: {{Value|15%}}
+| Incline '''along the way''' (for hilly areas), specified as: {{Value|up}} or {{Value|down}}
+| Incline '''along the way''' (for hilly areas), specified as a value, example: {{Value|15%}}
 |-
-|{{Tag|incline:across}}
-|{{IconWay}}
+| {{Tag|incline:across}}
+| {{IconWay}}
 | colspan="3" |
-|Incline '''across the way'''<!-- As of 2025-04-09, exact standard for this tag has not been fully defined. -->
+| Incline '''across the way'''<!-- As of 2025-04-09, exact standard for this tag has not been fully defined. -->
 |-
-|{{Tag|tactile_paving:colour}}
-|{{IconWay}}
+| {{Tag|tactile_paving}}
+| {{IconWay}}
 | colspan="3" |
-|Specify the tactile paving color.
+| Is ''tactile paving'' present?:
+* {{Value|yes}} - Tactile paving is present '''along the entire way'''<br>⚠️ '''''NOTE''': This is exceedingly rare in the United States. Please review [[Key:tactile paving#Use on ways|this section]] of the {{Tag|tactile_paving}} page if you are unsure.''
+* {{Value|no}} - Tactile paving is not present '''along the entire way'''
+|-
+| {{Tag|tactile_paving:colour}}
+| {{IconWay}}
+| colspan="3" |
+| Specify the tactile paving color.
 |}
+
 === Crossings ===
 {| class="wikitable sortable" style="width: 100%; margin: auto;"
 ! style="width: 20%;" |Tag
@@ -133,97 +134,109 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 ! style="width: 20%;" |[[File:PWG - Gold.svg|alt=Circular icon containing a pedestrian symbol with a gold-colored background.|frameless|32x32px]] Gold
 ! style="width: 20%;" |[[File:PWG - Diamond.svg|alt=Circular icon containing a pedestrian symbol with a diamond-colored background.|frameless|32x32px]] Diamond
 |-
-|{{Tag|highway|footway}} + {{Tag|footway|crossing}}
-|{{IconWay}}|| colspan="4" | Indicates a crossing '''mapped as a way.'''
+| {{Tag|highway|footway}} + {{Tag|footway|crossing}}
+| {{IconWay}} || colspan="4" | Indicates a crossing '''mapped as a way.'''
 |-
-|{{Tag|highway|crossing}}
-|{{IconNode}}
-| colspan="4" |Indicates a crossing '''mapped as a node. ⛔️ ''NOTE: The {{Tag|footway}} tag is not used on crossings mapped as nodes.''''' 
+| {{Tag|highway|crossing}}
+| {{IconNode}}
+| colspan="4" | Indicates a crossing '''mapped as a node.<br>⛔️ ''NOTE: The {{Tag|footway}} tag is not used on crossings mapped as nodes.''''' 
 |-
-|{{Tag|crossing:markings}}
-|{{IconWay}}{{IconNode}}||Are ''markings'' present?:
-*{{Value|yes}}, or
-*{{Value|no}}
-| colspan="3" |In the silver tier, this tag becomes more specific, ex:
-*{{Value|zebra}}, or
-*{{Value|lines}}, or
-*any other valid value
+| {{Tag|crossing:markings}}
+| {{IconWay}}{{IconNode}} || Are ''markings'' present?:
+* {{Value|yes}}, or
+* {{Value|no}}
+| colspan="3" | In the Silver tier, this tag becomes more specific, ex:
+* {{Value|zebra}}, or
+* {{Value|lines}}, or
+* any other valid value
 |-
-|{{Tag|crossing:signals}}
-|{{IconWay}}{{IconNode}}
-| colspan="3" |Are ''signals'' present?:
-*{{Value|yes}}, or
-*{{Value|no}}
-| In the diamond tier, this tag becomes more specific, ex:
-*{{Value|shared}}, or
+| {{Tag|crossing:signals}}
+| {{IconWay}}{{IconNode}}
+| colspan="3" | Are ''signals'' present?:
+* {{Value|yes}}, or
+* {{Value|no}}
+| In the Diamond tier, this tag becomes more specific, ex:
+* {{Value|shared}}, or
 * {{Value|dedicated}}
 |-
-|{{Tag|tactile_paving}}
-|{{IconWay}} 
+| {{Tag|tactile_paving}}
+| {{IconNode}}
 |
-| colspan="3" |Is ''tactile paving'' present '''along the entire way'''?:
-*{{Value|yes}} - Tactile paving is present '''along the entire way'''
-*{{Value|no}} - Tactile paving is not present '''along the entire way'''
+| colspan="3" | Is ''tactile paving'' present '''at the curb nodes?''':
+* {{Value|yes}} - Tactile paving is present '''at both curbs'''
+* {{Value|no}} - Tactile paving is <u>NOT</u> present '''at either curb'''
+* {{Value|partial}} - Tactile paving is present '''at only one curb'''
 |-
-|{{Tag|tactile_paving}}
-|{{IconNode}}
+| {{Tag|surface}}
+| {{IconWay}}{{IconNode}}
 |
-| colspan="3" |Is ''tactile paving'' present '''at the curb nodes?''':
-*{{Value|yes}} - Tactile paving is present '''at both curbs'''
-*{{Value|no}} - Tactile paving is <u>NOT</u> present '''at either curb'''
-*{{Value|partial}} - Tactile paving is present '''at only one curb'''
-|-
-|{{Tag|surface}}
-|{{IconWay}}{{IconNode}}
-|
-| colspan="3" |Required in the silver tier, example values include:
-*{{Value|concrete}}
-*{{Value|asphalt}}
+| colspan="3" | Required in the Silver tier. Example values include:
+* {{Value|concrete}}
+* {{Value|asphalt}}
 |-
 | {{Tag|crossing:island|}}
-|{{IconWay}}{{IconNode}}
+| {{IconWay}}{{IconNode}}
 |
-| colspan="3" |Indicate presence: {{Value|yes}} or {{Value|no}}
+| colspan="3" | Indicate presence: {{Value|yes}} or {{Value|no}}
 |-
-|{{Tag|button_operated}}
-|{{IconWay}}{{IconNode}}
-| colspan="2" |
-| colspan="2" |Indicate button operation: {{Value|yes}} or {{Value|no}}
-|-
-|{{Tag|traffic_signals:arrow}}
+|{{Tag|crossing:signed}}
 |{{IconWay}}{{IconNode}}
 | colspan="2" |
 | colspan="2" |Indicate presence: {{Value|yes}} or {{Value|no}}
 |-
-|{{Tag|traffic_signals:vibration}}
-|{{IconWay}}{{IconNode}}
+| {{Tag|width}}
+| {{IconWay}}{{IconNode}}
 | colspan="2" |
-| colspan="2" |Indicate presence: {{Value|yes}} or {{Value|no}}
+| colspan="2" | Required in the Gold tier.
+|-
+| {{Tag|button_operated}}
+| {{IconWay}}{{IconNode}}
+| colspan="2" |
+| colspan="2" | Indicate button operation: {{Value|yes}} or {{Value|no}}
+|-
+| {{Tag|traffic_signals:arrow}}
+| {{IconWay}}{{IconNode}}
+| colspan="2" |
+| colspan="2" | Indicate presence: {{Value|yes}} or {{Value|no}}
+|-
+| {{Tag|traffic_signals:vibration}}
+| {{IconWay}}{{IconNode}}
+| colspan="2" |
+| colspan="2" | Indicate presence: {{Value|yes}} or {{Value|no}}
+|-
+| {{Tag|traffic_signals:sound}}
+| {{IconWay}}{{IconNode}}
+| colspan="2" |
+| Are ''acoustic signals'' present?
+* {{Value|yes}} - when there are signals helping to cross.
+* {{Value|no}} - when there are no acoustic signals.
+| When there are ''partial'' sound signals:
+* {{Value|locate}} - Acoustic signals are '''present for finding the button only'''
+* {{Value|walk}} - Acoustic signals are '''present for walk permission only'''
 |-
 | {{Tag|traffic_signals:minimap}}
-|{{IconWay}}{{IconNode}}
-| colspan="2" |
-| colspan="2" |Indicate presence: {{Value|yes}} or {{Value|no}}
-|-
-|{{Tag|traffic_signals:sound}}
-|{{IconWay}}{{IconNode}}
-| colspan="2" |
-|Are ''acoustic signals'' present?
-*{{Value|yes}} - when there are signals helping to cross.
-*{{Value|no}} - when there are no acoustic signals.
-|When there are ''partial'' sound signals:
-*{{Value|locate}} - Acoustic signals are '''present for finding the button only'''
-*{{Value|walk}} - Acoustic signals are '''present for walk permission only'''
-|-
-|{{Tag|width|}}
-|{{IconWay}}{{IconNode}}
-| colspan="2" |
-| colspan="2" |Required in the gold tier.
-|-
-|{{Tag|tactile_paving|subkey=colour}}
-|{{IconWay}}{{IconNode}} 
+| {{IconWay}}{{IconNode}}
 | colspan="3" |
-|Specify the tactile paving color.
+| Indicate presence: {{Value|yes}} or {{Value|no}}
+|-
+| {{Tag|crossing:flags}}
+| {{IconWay}}{{IconNode}}
+| colspan="3" |
+| Are ''pedestrian crossing flags'' present?
+* {{Value|yes}} - Flags are (usually) present
+* {{Value|no}} - Flags are (usually) not present
+|-
+| {{Tag|tactile_paving}}
+| {{IconWay}} 
+| colspan="3" |
+| Is ''tactile paving'' present '''along the entire way'''?:
+* {{Value|yes}} - Tactile paving is present '''along the entire way'''<br>⚠️ '''''NOTE''': This is exceedingly rare in the United States. Please review [[Key:tactile paving#Use on ways|this section]] of the {{Tag|tactile_paving}} page if you are unsure.''
+* {{Value|no}} - Tactile paving is not present '''along the entire way'''
+|-
+| {{Tag|tactile_paving|subkey=colour}}
+| {{IconWay}}{{IconNode}} 
+| colspan="3" |
+| Specify the tactile paving color.
 |}
 
 === Curbs ===
@@ -269,127 +282,124 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 === Islands ===
 {| class="wikitable sortable" style="width: 100%; margin: auto;"
 ! style="width: 20%;" |Tag
-!Element 
+! Element 
 ! style="width: 20%;" |[[File:PWG_-_Bronze.svg|alt=Circular icon containing a pedestrian symbol with a bronze-colored background.|frameless|32x32px]] Bronze
 ! style="width: 20%;" |[[File:PWG_-_Silver.svg|alt=Circular icon containing a pedestrian symbol with a silver-colored background.|frameless|32x32px]] Silver
 ! style="width: 20%;" |[[File:PWG - Gold.svg|alt=Circular icon containing a pedestrian symbol with a gold-colored background.|frameless|32x32px]] Gold
 ! style="width: 20%;" |[[File:PWG - Diamond.svg|alt=Circular icon containing a pedestrian symbol with a diamond-colored background.|frameless|32x32px]] Diamond
 |-
-|{{Tag|highway|footway}} + {{Tag|footway|traffic_island}}
-|{{IconWay}}||
-| colspan="3" |Indicate a traffic island '''mapped as a way'''
+| {{Tag|highway|footway}} + {{Tag|footway|traffic_island}}
+| {{IconWay}}
+| colspan="3" | Indicate a traffic island '''mapped as a way'''
 |-
-|{{Tag|surface}}
-|{{IconWay}}
-|
-| colspan="3" |Required in the silver tier, example values include:
-*{{Value|concrete}}
-*{{Value|asphalt}}
+| {{Tag|surface}}
+| {{IconWay}}
+| colspan="3" | Required in the Silver tier. Example values include:
+* {{Value|concrete}}
+* {{Value|asphalt}}
 |-
-|{{Tag|tactile_paving}}
-|{{IconWay}}
-|
-| colspan="3" |Is ''tactile paving'' present?:
-*{{Value|yes}} - Tactile paving is present '''along the entire way'''
-*{{Value|no}} - Tactile paving is not present '''along the entire way'''
-|-
-|{{Tag|lit}}
-|{{IconWay}}
+| {{Tag|lit}}
+| {{IconWay}}
 | colspan="2" |
-| colspan="2" |Indicate whether the way is lit, examples include:
-
+| colspan="2" | Indicate whether the way is lit. Examples values include:
 * {{Value|yes}}, or
 * {{Value|no}}, or
 * any other valid value
 |-
-|{{Tag|width}}
-|{{IconWay}}
+| {{Tag|width}}
+| {{IconWay}}
 | colspan="2" |
-| colspan="2" |Specify the width of the traffic island
+| colspan="2" | Specify the width of the traffic island footway
 |-
-|{{Tag|incline}}
-|{{IconWay}}
+| {{Tag|incline}}
+| {{IconWay}}
 | colspan="2" |
-|Incline '''along the way''' (for hilly areas), specified as: {{Value|up}} or {{Value|down}}
-|Incline '''along the way''' (for hilly areas), specified as a value, example: {{Value|15%}}
+| Incline '''along the way''' (for hilly areas), specified as: {{Value|up}} or {{Value|down}}
+| Incline '''along the way''' (for hilly areas), specified as a value, example: {{Value|15%}}
 |-
-|{{Tag|incline:across}}
-|{{IconWay}}
+| {{Tag|incline:across}}
+| {{IconWay}}
 | colspan="3" |
-|Incline '''across the way'''<!-- As of 2025-04-09, exact standard for this tag has not been fully defined. -->
+| Incline '''across the way'''<!-- As of 2025-04-09, exact standard for this tag has not been fully defined. -->
 |-
-|{{Tag|tactile_paving:colour}}
-|{{IconWay}}
+| {{Tag|tactile_paving}}
+| {{IconWay}}
 | colspan="3" |
-|Specify the tactile paving color.
+| Is ''tactile paving'' present?:
+* {{Value|yes}} - Tactile paving is present '''along the entire way'''<br>⚠️ '''''NOTE''': This is exceedingly rare in the United States. Please review [[Key:tactile paving#Use on ways|this section]] of the {{Tag|tactile_paving}} page if you are unsure.''
+* {{Value|no}} - Tactile paving is not present '''along the entire way'''
+|-
+| {{Tag|tactile_paving:colour}}
+| {{IconWay}}
+| colspan="3" |
+| Specify the tactile paving color.
 |}
 
 === Access Aisles ===
 {| class="wikitable sortable" style="width: 100%; margin: auto;"
 ! style="width: 20%;" |Tag
-!Element 
+! Element 
 ! style="width: 20%;" |[[File:PWG_-_Bronze.svg|alt=Circular icon containing a pedestrian symbol with a bronze-colored background.|frameless|32x32px]] Bronze
 ! style="width: 20%;" |[[File:PWG_-_Silver.svg|alt=Circular icon containing a pedestrian symbol with a silver-colored background.|frameless|32x32px]] Silver
 ! style="width: 20%;" |[[File:PWG - Gold.svg|alt=Circular icon containing a pedestrian symbol with a gold-colored background.|frameless|32x32px]] Gold
 ! style="width: 20%;" |[[File:PWG - Diamond.svg|alt=Circular icon containing a pedestrian symbol with a diamond-colored background.|frameless|32x32px]] Diamond
 |-
-|{{Tag|highway|footway}} + {{Tag|footway|access_aisle}}
-|{{IconWay}}||
-| colspan="3" |Indicate an access aisle location
+| {{Tag|highway|footway}} + {{Tag|footway|access_aisle}}
+| {{IconWay}}||
+| colspan="3" | Indicate an access aisle location
 |-
-|{{Tag|access_aisle:markings|}}
-|{{IconWay}}
+| {{Tag|access_aisle:markings|}}
+| {{IconWay}}
 |
-| colspan="3" |Specify the presence and type of markings:
+| colspan="3" | Specify the presence and type of markings:
 * {{Value|no}} - No markings
 * {{Value|yes}} - Markings present, type unspecified
 * {{Value|zebra}} - Zebra markings
 * {{Value|ladder:skewed}} - Skewed ladder markings
 * Any other applicable value
 |-
-|{{Tag|surface}}
-|{{IconWay}}
+| {{Tag|surface}}
+| {{IconWay}}
 |
-| colspan="3" |Required in the silver tier, example values include:
-*{{Value|concrete}}
-*{{Value|asphalt}}
+| colspan="3" | Required in the Silver tier. Example values include:
+* {{Value|concrete}}
+* {{Value|asphalt}}
 |-
-|{{Tag|tactile_paving}}
-|{{IconWay}}
-|
-| colspan="3" |Is ''tactile paving'' present?:
-*{{Value|yes}} - Tactile paving is present '''along the entire way'''
-*{{Value|no}} - Tactile paving is not present '''along the entire way'''
-|-
-|{{Tag|lit}}
-|{{IconWay}}
+| {{Tag|lit}}
+| {{IconWay}}
 | colspan="2" |
-| colspan="2" |Indicate whether the way is lit, examples include:
-
+| colspan="2" | Indicate whether the way is lit. Example values include:
 * {{Value|yes}}, or
 * {{Value|no}}, or
 * any other valid value
 |-
-|{{Tag|width}}
-|{{IconWay}}
+| {{Tag|width}}
+| {{IconWay}}
 | colspan="2" |
-| colspan="2" |Specify the width of the access aisle
+| colspan="2" | Specify the width of the access aisle
 |-
-|{{Tag|incline}}
-|{{IconWay}}
+| {{Tag|incline}}
+| {{IconWay}}
 | colspan="2" |
-|Incline '''along the way''' (for hilly areas), specified as: {{Value|up}} or {{Value|down}}
-|Incline '''along the way''' (for hilly areas), specified as a value, example: {{Value|15%}}
+| Incline '''along the way''' (for hilly areas), specified as: {{Value|up}} or {{Value|down}}
+| Incline '''along the way''' (for hilly areas), specified as a value, example: {{Value|15%}}
 |-
-|{{Tag|incline:across}}
-|{{IconWay}}
+| {{Tag|incline:across}}
+| {{IconWay}}
 | colspan="3" |
-|Incline '''across the way'''<!-- As of 2025-04-09, exact standard for this tag has not been fully defined. -->
+| Incline '''across the way'''<!-- As of 2025-04-09, exact standard for this tag has not been fully defined. -->
 |-
-|{{Tag|tactile_paving:colour}}
-|{{IconWay}}
+| {{Tag|tactile_paving}}
+| {{IconWay}}
 | colspan="3" |
-|Specify the tactile paving color.
+|Is ''tactile paving'' present?:
+* {{Value|yes}} - Tactile paving is present '''along the entire way'''<br>⚠️ '''''NOTE''': This is exceedingly rare in the United States. Please review [[Key:tactile paving#Use on ways|this section]] of the {{Tag|tactile_paving}} page if you are unsure.''
+* {{Value|no}} - Tactile paving is not present '''along the entire way'''
+|-
+| {{Tag|tactile_paving:colour}}
+| {{IconWay}}
+| colspan="3" |
+| Specify the tactile paving color.
 |}
 
 === Roadways ===
@@ -406,7 +416,8 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 |-
 |{{Tag|sidewalk||subkey={{Tagvariable|(left{{!}}right{{!}}both)}}}} 
 |{{IconWay}}
-| colspan="4" |To support consistency and clarity in pedestrian infrastructure data, the US Pedestrian Working Group recommends avoiding the use of {{Tag|sidewalk|yes}} to indicate the presence of sidewalks along a street. Please consider using one of the following:
+| colspan="4" |To support consistency and clarity in pedestrian infrastructure data, the PWG recommends avoiding new use of the older {{Tag|sidewalk|}} key.
+Instead, because we start with separately mapped sidewalks at the [[File:PWG_-_Bronze.svg|frameless|16x16px]] Bronze Tier, we use the newer approach, {{Tag|sidewalk|no{{!}}separate|subkey={{Tagvariable|(left{{!}}right{{!}}both)}}}}, to indicate the presence and relative position of sidewalks along a street:
 
 * {{Value|no}} - No associated sidewalk present
 * {{Value|separate}} - Associated sidewalk is present '''and''' mapped as separate geometry
@@ -416,5 +427,7 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 | colspan="2" |
 | colspan="2" |Indicate the highway speed limit
 |}
+
+{{PWG Releases Table}}
 
 [[Category:Tagging guidelines]]
