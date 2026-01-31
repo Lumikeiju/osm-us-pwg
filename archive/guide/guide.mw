@@ -38,7 +38,7 @@ If you have access to high-quality imagery and want to map pedestrian infrastruc
 
 === Crossings ===
 * {{IconNode}} Crossing Node Mapping:
-: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|crossing}} + {{Tag|footway|crossing}} - Node attached to the intersecting road, indicating the location of a crossing.
+: [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|crossing}} - Node attached to the intersecting road, indicating the location of a crossing.
 * {{IconWay}} Crossing Way Mapping:
 : [[File:PWG - Bronze.svg|16px|text-bottom|frameless]] {{Tag|highway|footway}} + {{Tag|footway|crossing}} - Representational mapping of crossing centerline.
 :: ⚠️ '''''NOTE''': The {{Tag|tactile_paving}} tag is common on {{Tag|footway|crossing}} {{IconWay}} ways, but often incorrect because the tag, when applied to ways, is meant to indicate linear wayfinding tactile paving that is present '''along the entire way'''. This is exceedingly rare in the United States, so please review [[Key:tactile paving#Use on ways|this section]] of the {{Tag|tactile_paving}} page for additional information and fix the {{Tag|tactile_paving}} tag if it is present and incorrect!''
